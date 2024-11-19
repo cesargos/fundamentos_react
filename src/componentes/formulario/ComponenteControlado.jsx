@@ -12,7 +12,7 @@ export default () => {
         tem q vir via renderização e não do input do teclado
       </p>
       <p>
-        Ele é um componente controla pq esta amarrado a um determinado estado
+        Ele é um componente controlado pq esta amarrado a um determinado estado
       </p>
       <input value={valor} onChange={quandoMudar} />
       <input value={valor} readOnly />

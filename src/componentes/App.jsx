@@ -14,12 +14,22 @@ import ListaAlunos from './repeticao/ListaAlunos';
 import TabelaProdutos from './repeticao/TabelaProdutos';
 import UsuarioInfo from './condicional/UsuarioInfo';
 import ComponenteControlado from './formulario/ComponenteControlado';
+import Contador from './contador/Contador';
+import Mega from './mega/Mega';
 
 // Utilizando Função arrow para retornar
 export default () => (
   <div className="App" id="App">
     <h1>Fundamentos React</h1>
     <div className="Cards">
+      <Card titulo="#13 - Mega" color="#641568">
+        <Mega />
+      </Card>
+
+      <Card titulo="#12 - Trabalando com CLASSES - Contador" color="blueviolet">
+        <Contador numeroInicial={100} />
+      </Card>
+
       <Card titulo="#11 - Componente Controlado (Input)" color="#e45f56">
         <ComponenteControlado />
       </Card>
