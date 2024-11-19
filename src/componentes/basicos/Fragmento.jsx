@@ -1,6 +1,6 @@
 import React from 'react';
 //  componentes funcionais
-export default function Fragmento(props) {
+export default function Fragmento() {
   return (
     <React.Fragment key="1">
       <h2>Fragmento ={'>'} Cuidado com esse Erro!!!</h2>
