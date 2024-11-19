@@ -5,6 +5,8 @@ import Primeiro from './basicos/Primeiro';
 import ComParametro from './basicos/ComParametros';
 import Fragmento from './basicos/Fragmento';
 import Aleatorio from './basicos/Aleatorio';
+import Familia from './basicos/Familia';
+import FamiliaMembro from './basicos/FamiliaMembro';
 import Card from './layout/Card';
 
 // Utilizando Função arrow para retornar
@@ -12,6 +14,17 @@ export default () => (
   <div className="App" id="App">
     <h1>Fundamentos React</h1>
     <div className="Cards">
+      <Card
+        titulo="#5 - Passando paramentros de pai para filhos"
+        color="#00c8f8"
+      >
+        <Familia sobrenome="Ferreira">
+          <FamiliaMembro nome="Cesar" />
+          <FamiliaMembro nome="Ana" />
+          <FamiliaMembro nome="Marta" />
+        </Familia>
+      </Card>
+
       <Card titulo="#4 - Desafio números aleatórios" color="#FA6900">
         <Aleatorio />
       </Card>
