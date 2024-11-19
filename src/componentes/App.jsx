@@ -22,7 +22,7 @@ export default () => (
   <div className="App" id="App">
     <h1>Fundamentos React</h1>
     <div className="Cards">
-      <Card titulo="#13 - Mega" color="#641568">
+      <Card titulo="#13 - Desafio Mega" color="#641568">
         <Mega />
       </Card>
 
@@ -47,7 +47,7 @@ export default () => (
         <UsuarioInfo usuario={{ email: 'a@a.com' }} />
       </Card>
 
-      <Card titulo="#7 - Repetição Desafio" color="#50acf5">
+      <Card titulo="#7 - Desafio Repetição" color="#50acf5">
         <TabelaProdutos />
       </Card>
 
