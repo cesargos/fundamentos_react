@@ -8,12 +8,21 @@ import Aleatorio from './basicos/Aleatorio';
 import Familia from './basicos/Familia';
 import FamiliaMembro from './basicos/FamiliaMembro';
 import Card from './layout/Card';
+import ListaAlunos from './repeticao/ListaAlunos';
+import TabelaProdutos from './repeticao/TabelaProdutos';
 
 // Utilizando Função arrow para retornar
 export default () => (
   <div className="App" id="App">
     <h1>Fundamentos React</h1>
     <div className="Cards">
+      <Card titulo="#7 - Repetição Desafio" color="#50acf5">
+        <TabelaProdutos />
+      </Card>
+      <Card titulo="#6 - Repetição" color="#ff4c65">
+        <ListaAlunos />
+      </Card>
+
       <Card
         titulo="#5 - Passando paramentros de pai para filhos"
         color="#00c8f8"
