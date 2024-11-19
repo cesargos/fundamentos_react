@@ -17,7 +17,7 @@ export default () => {
           {produtos.map((produto, index) => (
             <tr
               key={`produto_${produto.id}`}
-              className={index % 2 == 0 ? 'Par' : 'Impar'}
+              className={index % 2 === 0 ? 'Par' : 'Impar'}
             >
               <td>{produto.id}</td>
               <td>{produto.nome}</td>
