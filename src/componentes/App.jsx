@@ -13,12 +13,17 @@ import Card from './layout/Card';
 import ListaAlunos from './repeticao/ListaAlunos';
 import TabelaProdutos from './repeticao/TabelaProdutos';
 import UsuarioInfo from './condicional/UsuarioInfo';
+import ComponenteControlado from './formulario/ComponenteControlado';
 
 // Utilizando Função arrow para retornar
 export default () => (
   <div className="App" id="App">
     <h1>Fundamentos React</h1>
     <div className="Cards">
+      <Card titulo="#11 - Componente Controlado (Input)" color="#e45f56">
+        <ComponenteControlado />
+      </Card>
+
       <Card titulo="#10 - Comunicação Indireta" color="#8bad39">
         <IndiretaPai />
       </Card>
