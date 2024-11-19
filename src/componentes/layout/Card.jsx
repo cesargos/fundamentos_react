@@ -1,11 +1,12 @@
 import React from 'react';
 import './Card.css';
 
-export default () => {
+export default (props) => {
+  console.log(props);
   return (
     <div className="Card">
-      <h2 className="Title">Usando CSS: </h2>
-      <p className="Content">Conteúdo</p>
+      <h2 className="Title">{props.titulo}</h2>
+      <div className="Content">{props.children}</div>
     </div>
   );
 };
