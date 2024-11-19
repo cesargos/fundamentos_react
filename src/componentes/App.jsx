@@ -1,6 +1,8 @@
 import React from 'react';
 import './App.css';
 
+import DiretaPai from './comunicacao/DiretaPai';
+import IndiretaPai from './comunicacao/IndiretaPai';
 import Primeiro from './basicos/Primeiro';
 import ComParametro from './basicos/ComParametros';
 import Fragmento from './basicos/Fragmento';
@@ -17,7 +19,15 @@ export default () => (
   <div className="App" id="App">
     <h1>Fundamentos React</h1>
     <div className="Cards">
-      <Card titulo="#6 - Rendereização condicional" color="#af2">
+      <Card titulo="#10 - Comunicação Indireta" color="#8bad39">
+        <IndiretaPai />
+      </Card>
+
+      <Card titulo="#9 - Comunicação Direta" color="#59323c">
+        <DiretaPai />
+      </Card>
+
+      <Card titulo="#8 - Rendereização condicional" color="#982395">
         <UsuarioInfo usuario={{ nome: 'Fernando' }} />
         <UsuarioInfo usuario={{ email: 'a@a.com' }} />
       </Card>
