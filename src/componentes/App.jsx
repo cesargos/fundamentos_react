@@ -16,12 +16,16 @@ import UsuarioInfo from './condicional/UsuarioInfo';
 import ComponenteControlado from './formulario/ComponenteControlado';
 import Contador from './contador/Contador';
 import Mega from './mega/Mega';
+import Calculator from '../calculadora/Calculator';
 
 // Utilizando Função arrow para retornar
 export default () => (
   <div className="App" id="App">
     <h1>Fundamentos React</h1>
     <div className="Cards">
+      <Card titulo="#13 - CALCULADOR" color="#904240">
+        <Calculator />
+      </Card>
       <Card titulo="#13 - Desafio Mega" color="#641568">
         <Mega />
       </Card>

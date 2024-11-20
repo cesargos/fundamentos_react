@@ -8,6 +8,7 @@
   flex-direction: column;
   min-width: 500px;
   max-width: 500px;
+  
 }
 
 .Card .Title {
@@ -22,4 +23,5 @@
   background-color: white;
   color: black;
   padding: 20px;
+
 }
