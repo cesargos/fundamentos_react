@@ -1,0 +1,9 @@
+.App {
+  display: flex;
+  /* flex-wrap: wrap;
+  justify-content: center; */
+  /* background-color: blue; */
+
+  /* VH é unidade de altura. ele divide em 100 parte então 30 seria 30% da altura da tela e não do componente */
+  height: 100vh; 
+}

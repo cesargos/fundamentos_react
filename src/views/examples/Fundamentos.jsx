@@ -1,26 +1,26 @@
 import React from 'react';
-import './App.css';
+import './Fundamentos.css';
 
-import DiretaPai from './comunicacao/DiretaPai';
-import IndiretaPai from './comunicacao/IndiretaPai';
-import Primeiro from './basicos/Primeiro';
-import ComParametro from './basicos/ComParametros';
-import Fragmento from './basicos/Fragmento';
-import Aleatorio from './basicos/Aleatorio';
-import Familia from './basicos/Familia';
-import FamiliaMembro from './basicos/FamiliaMembro';
-import Card from './layout/Card';
-import ListaAlunos from './repeticao/ListaAlunos';
-import TabelaProdutos from './repeticao/TabelaProdutos';
-import UsuarioInfo from './condicional/UsuarioInfo';
-import ComponenteControlado from './formulario/ComponenteControlado';
-import Contador from './contador/Contador';
-import Mega from './mega/Mega';
-import Calculator from '../calculadora/Calculator';
+import DiretaPai from '../../componentes/comunicacao/DiretaPai';
+import IndiretaPai from '../../componentes/comunicacao/IndiretaPai';
+import Primeiro from '../../componentes/basicos/Primeiro';
+import ComParametro from '../../componentes/basicos/ComParametros';
+import Fragmento from '../../componentes/basicos/Fragmento';
+import Aleatorio from '../../componentes/basicos/Aleatorio';
+import Familia from '../../componentes/basicos/Familia';
+import FamiliaMembro from '../../componentes/basicos/FamiliaMembro';
+import Card from '../../componentes/layout/Card';
+import ListaAlunos from '../../componentes/repeticao/ListaAlunos';
+import TabelaProdutos from '../../componentes/repeticao/TabelaProdutos';
+import UsuarioInfo from '../../componentes/condicional/UsuarioInfo';
+import ComponenteControlado from '../../componentes/formulario/ComponenteControlado';
+import Contador from '../../componentes/contador/Contador';
+import Mega from '../../componentes/mega/Mega';
+import Calculator from '../../calculadora/Calculator';
 
 // Utilizando Função arrow para retornar
 export default () => (
-  <div className="App" id="App">
+  <div className="Fundamentos" id="Fundamentos">
     <h1>Fundamentos React</h1>
     <div className="Cards">
       <Card titulo="#13 - CALCULADOR" color="#904240">

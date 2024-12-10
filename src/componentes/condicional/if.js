@@ -1,11 +1,12 @@
-export default (props) => {
-  const elseChild = props.children.find(
-    (child) => child?.type?.name === 'Else',
-  );
-  const ifChildren = props.children.filter((child) => child !== elseChild);
-  console.log({ props });
-  console.log({ elseChild });
-  if (props.test) {
+// Exercício #8 - Rendereização condicional
+const If = (props) => {
+  const children = Array.isArray(props.children)
+    ? props.children
+    : [props.children];
+  const elseChild = children.find((child) => child.type?.name === 'Else');
+  const ifChildren = children.filter((child) => child !== elseChild);
+
+  if (props?.test) {
     return ifChildren;
   } else if (elseChild) {
     return elseChild;
@@ -15,3 +16,4 @@ export default (props) => {
 };
 
 export const Else = (props) => props.children;
+export default If;
