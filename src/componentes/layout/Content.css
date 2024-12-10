@@ -1,9 +1,14 @@
 .Content {
   display: flex;
   flex-grow: 1;
+  flex-direction: column;
   background-color: #ddd;
   padding: 30px;
 }
 .Content:has(.UsuarioInfo) {
   display: block;
+}
+.Content:has(.calculator) {
+  align-items: center;
+
 }

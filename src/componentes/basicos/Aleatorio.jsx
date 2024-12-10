@@ -23,10 +23,14 @@ export default function Aleatorio() {
     <div>
       <h2>Sorteando um numero aleatoriamente</h2>
       <p>
-        Digite o valor inicial:&nbsp;
-        <input id="minValue"></input>
-        &nbsp;&nbsp;Digite o valor final:&nbsp;
-        <input id="maxValue"></input>&nbsp;&nbsp;
+        <p>
+          Digite o valor inicial:&nbsp;
+          <input id="minValue"></input>
+        </p>
+        <p>
+          Digite o valor final:&nbsp;
+          <input id="maxValue"></input>&nbsp;&nbsp;
+        </p>
         <button onClick={randomize}>Calcular</button>
       </p>
       <p>

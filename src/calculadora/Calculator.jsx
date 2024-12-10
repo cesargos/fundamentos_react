@@ -29,15 +29,12 @@ export default class Calculador extends Component {
 
   setOperation = (operation) => {
     if (this.state.displayValue === '0' && this.state.current === 0) {
-      console.log('saiu if 1');
       return;
     }
     if (this.state.current === 0 && operation === '=') {
-      console.log('saiu if 2');
       return;
     }
     if (operation !== '=' && this.state.operationPress) {
-      console.log('saiu if 3');
       this.setState({
         operation,
       });

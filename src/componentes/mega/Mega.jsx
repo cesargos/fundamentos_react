@@ -21,7 +21,6 @@ export default () => {
       if (numeros.includes(numero)) continue;
       numeros.push(numero);
     }
-    console.log(numeros);
 
     setNumeros(numeros.sort());
   };
