@@ -1,21 +1,21 @@
 import React from 'react';
 import './Fundamentos.css';
 
-import DiretaPai from '../../componentes/comunicacao/DiretaPai';
-import IndiretaPai from '../../componentes/comunicacao/IndiretaPai';
-import Primeiro from '../../componentes/basicos/Primeiro';
-import ComParametro from '../../componentes/basicos/ComParametros';
-import Fragmento from '../../componentes/basicos/Fragmento';
-import Aleatorio from '../../componentes/basicos/Aleatorio';
-import Familia from '../../componentes/basicos/Familia';
-import FamiliaMembro from '../../componentes/basicos/FamiliaMembro';
-import Card from '../../componentes/layout/Card';
-import ListaAlunos from '../../componentes/repeticao/ListaAlunos';
-import TabelaProdutos from '../../componentes/repeticao/TabelaProdutos';
-import UsuarioInfo from '../../componentes/condicional/UsuarioInfo';
-import ComponenteControlado from '../../componentes/formulario/ComponenteControlado';
-import Contador from '../../componentes/contador/Contador';
-import Mega from '../../componentes/mega/Mega';
+import DiretaPai from '../../components/comunicacao/DiretaPai';
+import IndiretaPai from '../../components/comunicacao/IndiretaPai';
+import Primeiro from '../../components/basicos/Primeiro';
+import ComParametro from '../../components/basicos/ComParametros';
+import Fragmento from '../../components/basicos/Fragmento';
+import Aleatorio from '../../components/basicos/Aleatorio';
+import Familia from '../../components/basicos/Familia';
+import FamiliaMembro from '../../components/basicos/FamiliaMembro';
+import Card from '../../components/layout/Card';
+import ListaAlunos from '../../components/repeticao/ListaAlunos';
+import TabelaProdutos from '../../components/repeticao/TabelaProdutos';
+import UsuarioInfo from '../../components/condicional/UsuarioInfo';
+import ComponenteControlado from '../../components/formulario/ComponenteControlado';
+import Contador from '../../components/contador/Contador';
+import Mega from '../../components/mega/Mega';
 import Calculator from '../../calculadora/Calculator';
 
 // Utilizando Função arrow para retornar

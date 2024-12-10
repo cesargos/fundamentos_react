@@ -3,8 +3,8 @@ import { BrowserRouter } from 'react-router-dom';
 import './App.css';
 
 // import Fundamentos from './examples/Fundamentos';
-import Menu from '../componentes/layout/Menu';
-import Content from '../componentes/layout/Content';
+import Menu from '../components/layout/Menu';
+import Content from '../components/layout/Content';
 
 export default () => (
   <div className="App">

@@ -5,6 +5,11 @@
   background-color: #ddd;
   padding: 30px;
 }
+.Content > * {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
 .Content:has(.UsuarioInfo) {
   display: block;
 }
