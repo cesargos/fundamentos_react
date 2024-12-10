@@ -26,6 +26,44 @@
   display: flex;
   flex-direction: column;
 }
+/* Estado inicial ao entrar (DE)*/
+.submenu-enter {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+}
+
+/* Durante a entrada (animação) (PARA) */
+.submenu-enter-active {
+  max-height: 250px;
+  opacity: 1;
+  overflow: hidden;
+  transition: all 500ms ease-in-out;
+}
+
+/* Estado inicial ao sair (DE) */
+.submenu-exit {
+  max-height: 250px;
+  opacity: 1;
+}
+
+/* Durante a saída (animação) (PARA)*/
+.submenu-exit-active {
+  max-height: 0;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+}
+
+.Menu li.hooks ul {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-wrap: nowrap;
+}
+/*
+.Menu li.hooks ul.open {
+  height: auto;
+}*/
 
 .Menu li.hooks ul li a{
   display: flex;
@@ -34,6 +72,26 @@
   font-size: 1rem;
   margin-bottom: 0;
   padding: 5px;
+}
+.Menu li.hooks ul li:last-child{
+  margin-bottom: 20px;
+}
+/*
+.Menu li.hooks ul li:first-child{
+  margin-top: -20px;
+} */
+
+.Menu li.hooks h3 {
+  color: #fff;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  margin-top: 0;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.Menu li.hooks h3:hover {
+  background: #00000020;
 }
 
 .Menu li > a {
