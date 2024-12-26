@@ -26,7 +26,11 @@ const UseMemo = () => {
 
   return (
     <div className="UseMemo">
-      <PageTitle title="Hook UseMemo" subtitle="Retorna um valor memoizado!" />
+      <PageTitle
+        title="Hook UseMemo"
+        subtitle="Retorna um valor memorizado!
+        Para React.memo e useState+useEffect"
+      />
       <div className="center">
         <input
           type="number"

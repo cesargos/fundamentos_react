@@ -40,6 +40,10 @@ const UseState = () => {
 
       <SectionTitle title="Anotações" />
       <p>
+        <b>UseState:</b> setCount(count + 1) === setCount((current) ={'>'}{' '}
+        current+1)
+      </p>
+      <p>
         O useState retorna um array com o primeiro retorno sendo a variavel e o
         segundo retorno do array sendo a função para alterar a variavel e
         renderizar o front.
