@@ -4,10 +4,13 @@ import PageTitle from '../../components/layout/PageTitle';
 import SectionTitle from '../../components/layout/SectionTitle';
 
 function calcFatorial(num) {
-  const n = parseInt(num);
-  if (n < 0) return -1;
-  if (n === 0) return 1;
-  return calcFatorial(n - 1) * n;
+  if (/^\d{1,3}$/.test(num.toString())) {
+    const n = parseInt(num);
+    if (n < 0) return -1;
+    if (n === 0) return 1;
+    return calcFatorial(n - 1) * n;
+  }
+  return Infinity;
 }
 
 const UseEffect = () => {
@@ -15,7 +18,8 @@ const UseEffect = () => {
   const [fatorial, setFatorial] = useState(1);
   const [isPar, setIsPar] = useState('Ímpar');
   useEffect(() => {
-    setIsPar(number % 2 === 0 ? 'Par' : 'Ímpar');
+    const lastNumber = parseInt([...number.toString()].pop());
+    setIsPar(lastNumber % 2 === 0 ? 'Par' : 'Ímpar');
     setFatorial(calcFatorial(number));
   }, [number]);
   return (
@@ -55,21 +59,18 @@ const UseEffect = () => {
         mesma entrará num looping infinito. Para isso se usa o useEffect().
       </p>
       <p>useEffect(fn_calback, [lista de monitoramento])</p>
-      <p>
-        <ol>
-          <li>
-            O useEffect será executado sempre que o componente for criado.
-          </li>
-          <li>
-            O useEffect será executado sempre que as variáveis que estão sendo
-            monitoradas forem alteradas
-          </li>
-          <li>
-            Caso a função passada no useEffect retornar uma função. Ela sera
-            executada quando o componente for destruido.
-          </li>
-        </ol>
-      </p>
+
+      <ol>
+        <li>O useEffect será executado sempre que o componente for criado.</li>
+        <li>
+          O useEffect será executado sempre que as variáveis que estão sendo
+          monitoradas forem alteradas
+        </li>
+        <li>
+          Caso a função passada no useEffect retornar uma função. Ela sera
+          executada quando o componente for destruido.
+        </li>
+      </ol>
     </div>
   );
 };
