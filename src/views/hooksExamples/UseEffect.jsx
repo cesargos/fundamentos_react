@@ -60,7 +60,7 @@ const UseEffect = () => {
       </p>
       <p>useEffect(fn_calback, [lista de monitoramento])</p>
 
-      <ol>
+      <ul>
         <li>O useEffect será executado sempre que o componente for criado.</li>
         <li>
           O useEffect será executado sempre que as variáveis que estão sendo
@@ -70,7 +70,7 @@ const UseEffect = () => {
           Caso a função passada no useEffect retornar uma função. Ela sera
           executada quando o componente for destruido.
         </li>
-      </ol>
+      </ul>
     </div>
   );
 };

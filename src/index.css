@@ -35,7 +35,9 @@ li {
   font-size: 3rem;
   color: #fff;
 }
-
+ul > ul {
+  list-style-type: circle;
+}
 .center {
   display: flex;
   flex-direction: column;

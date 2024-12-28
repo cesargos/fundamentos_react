@@ -34,7 +34,7 @@ const UseCallback = () => {
           novamente. Ainda mais se ele for estático como no caso do
           UseCallbackButtons. E no caso toda as vezes q aperatem os botoes eles
           vão ser redenrizado indevidamente.
-          <ol>
+          <ul>
             <li>
               Então para o componente PAI não renderizar o filho sem necessidade
               a gente passa a usar o useCallback. Para renderizar somente quando
@@ -49,7 +49,7 @@ const UseCallback = () => {
               props. Isso gera uma nova assinatura na função da props e faz o
               FILHO renderizar indevidamente
             </li>
-          </ol>
+          </ul>
         </li>
         <li>
           Semelhante ao useMemo. O useMemo retorna um valor que esta em cache

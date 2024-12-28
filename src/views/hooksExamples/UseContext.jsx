@@ -69,7 +69,7 @@ const UseContext = () => {
           A propriedade Provider do contexto (que foi criada a partir do
           <b> React.createContext()</b>) é uma tag a ser colocada envolvendo as
           demais deve ser o{'"Context.Provider"'}
-          <ol>
+          <ul>
             <li>
               A tag {'"Context.Provider"'} recebe uma propriedade chamada
               <b> value</b> que é responsável por passar o valor dela para as
@@ -81,7 +81,7 @@ const UseContext = () => {
               vai receber o valor de value. Mas o valor inicial vai ser um meio
               de tipar dentro do JS
             </li>
-          </ol>
+          </ul>
         </li>
         <li>
           O useContext recebe um contexto por parametro. Isso significa que

@@ -73,7 +73,7 @@ const UseMemo = () => {
           tela ate ser finalizada. E o input N3 vai ficar congelado e travando
           com a chamada da função demorada indevidamente mesmo ele não fazendo
           parte da função.¹
-          <ol>
+          <ul>
             <li>
               Podemos utilizar o useEffect e colocar a função que demora nele².
               Mas assim só vai deixar de travar quando usar o n3 caso use os
@@ -84,7 +84,7 @@ const UseMemo = () => {
               Assim não teremos que usar o useEffect junto com o useState. Mas
               continua travando
             </li>
-          </ol>
+          </ul>
         </li>
         <li>
           É um falor em cache que só vai chamar a função novamente. Caso os
