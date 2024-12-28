@@ -3,6 +3,11 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+li {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
 .text {
   font-weight: 300;
   font-size: 5rem;
