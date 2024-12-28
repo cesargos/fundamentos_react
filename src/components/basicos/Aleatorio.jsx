@@ -22,7 +22,7 @@ export default function Aleatorio() {
   return (
     <div>
       <h2>Sorteando um numero aleatoriamente</h2>
-      <p>
+      <div>
         <p>
           Digite o valor inicial:&nbsp;
           <input id="minValue"></input>
@@ -32,7 +32,7 @@ export default function Aleatorio() {
           <input id="maxValue"></input>&nbsp;&nbsp;
         </p>
         <button onClick={randomize}>Calcular</button>
-      </p>
+      </div>
       <p>
         O valor é: <strong id="randomValue"></strong>
       </p>
