@@ -1,33 +1,8 @@
 import React, { useReducer, useState } from 'react';
 import PageTitle from '../../components/layout/PageTitle';
 import SectionTitle from '../../components/layout/SectionTitle';
-
-const initialState = {
-  number: 0, // foco no exercicio é o number
-  other: '...',
-  cart: [],
-  user: null,
-  products: [],
-};
-
-function reducer(state, action) {
-  switch (action.type) {
-    case 'number_add2':
-      return { ...state, number: state.number + 2 };
-    case 'number_7times':
-      return { ...state, number: state.number * 7 };
-    case 'number_divided25':
-      return { ...state, number: state.number / 25 };
-    case 'number_parseInt':
-      return { ...state, number: parseInt(state.number) };
-    case 'number_add':
-      return { ...state, number: state.number + action.payload };
-    case 'login':
-      return { ...state, user: { name: action.payload } };
-    default:
-      return state;
-  }
-}
+import { initialState, reducer } from '../../store';
+import { login, numberAdd2 } from '../../store/actions';
 
 const UseReducer = () => {
   const [inputNumber, setInputNumber] = useState('0');
@@ -47,14 +22,11 @@ const UseReducer = () => {
         <div>
           <button
             className="btn"
-            onClick={() => dispatch({ type: 'login', payload: 'Cesar' })} // se tiver mais de uma informação para passar se usa um objeto no payload
+            onClick={() => login(dispatch, 'Cesar')} // se tiver mais de uma informação para passar se usa um objeto no payload
           >
             Login
           </button>
-          <button
-            className="btn"
-            onClick={() => dispatch({ type: 'number_add2' })}
-          >
+          <button className="btn" onClick={() => numberAdd2(dispatch)}>
             +2
           </button>
           <button
