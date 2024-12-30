@@ -72,12 +72,25 @@ const UseReducer = () => {
       <SectionTitle title="Anotações" />
       <ul>
         <li>
+          Se utiliza a pasta <b>data</b> contendo a pasta actions e reducers
+        </li>
+        <li>
           A partir de uma ação (action) se sabe quando será alterado o state
           para uma nova versão a partir da ação gerada
         </li>
         <ul>
-          <li>Toda ação tem um tipo (um nome).</li>
+          <li>
+            Toda ação tem um tipo (um nome). <b>action.type</b>
+          </li>
+          <li>
+            Para informar valores usar a propriedade actin<b>.payload</b>
+          </li>
         </ul>
+        <li>
+          É melhor usar o reducer junto com o useCustom para não ter que passar
+          sempre o dispacher
+        </li>
+        <li>O useReducer combina bem com o useContext (em vez do useState)</li>
       </ul>
     </div>
   );

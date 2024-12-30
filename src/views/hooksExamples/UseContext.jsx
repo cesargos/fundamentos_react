@@ -62,6 +62,9 @@ const UseContext = () => {
       <SectionTitle title="Anotações" />
       <ul>
         <li>
+          Se utiliza a pasta <b>data</b>
+        </li>
+        <li>
           Deve ser utilizado no compontente de mais alto nível da aplicação para
           ser acessivel a todos os filhos internos. Normalmente no App.jsx
         </li>
