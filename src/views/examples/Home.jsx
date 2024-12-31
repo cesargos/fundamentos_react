@@ -9,5 +9,11 @@ export default () => (
       title="Módulo Hooks"
       subtitle="Hooks são uma nova adição ao React 16.8."
     />
+    <h2>
+      <b>Documentação: </b>
+      <a target="_blank" href="https://pt-br.react.dev/learn" rel="noreferrer">
+        React.dev
+      </a>
+    </h2>
   </div>
 );

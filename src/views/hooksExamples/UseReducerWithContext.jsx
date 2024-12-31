@@ -1,3 +1,4 @@
+//CODIGO FONTE DO SEGUNDO CURSO DE REACT - NÃO ESTA SENDO UTILIZADO (SOMENTE PARA VISUALIZAÇÃO)
 import { createContext, useContext, useReducer, useRef } from 'react';
 
 // actions.js

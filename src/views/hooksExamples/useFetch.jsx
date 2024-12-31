@@ -1,3 +1,4 @@
+//CODIGO FONTE DO SEGUNDO CURSO DE REACT - NÃO ESTA SENDO UTILIZADO (SOMENTE PARA VISUALIZAÇÃO)
 import { useEffect, useRef, useState } from 'react';
 
 const isObjectEqual = (objA, objB) => {

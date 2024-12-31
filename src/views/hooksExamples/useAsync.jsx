@@ -1,3 +1,4 @@
+//CODIGO FONTE DO SEGUNDO CURSO DE REACT - NÃO ESTA SENDO UTILIZADO (SOMENTE PARA VISUALIZAÇÃO)
 import { useCallback, useEffect, useState } from 'react';
 
 const useAsync = (asyncFunction, shouldRun) => {
