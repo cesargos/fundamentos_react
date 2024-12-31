@@ -31,19 +31,19 @@ const UseReducer = () => {
           </button>
           <button
             className="btn"
-            onClick={() => dispatch({ type: 'number_7times' })} // se tiver mais de uma informação para passar se usa um objeto no payload
+            onClick={() => dispatch({ type: 'NUMBER_7TIMES' })} // se tiver mais de uma informação para passar se usa um objeto no payload
           >
             *7
           </button>
           <button
             className="btn"
-            onClick={() => dispatch({ type: 'number_divided25' })}
+            onClick={() => dispatch({ type: 'NUMBER_DIV25' })}
           >
             /25
           </button>
           <button
             className="btn"
-            onClick={() => dispatch({ type: 'number_parseInt' })}
+            onClick={() => dispatch({ type: 'NUMBER_PARSEINT' })}
           >
             ParseInt
           </button>
@@ -58,7 +58,7 @@ const UseReducer = () => {
               className="btn"
               onClick={() =>
                 dispatch({
-                  type: 'number_add',
+                  type: 'NUMBER_ADD',
                   payload: parseFloat(inputNumber || 0),
                 })
               }

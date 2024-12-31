@@ -1,3 +1,5 @@
+import { numberTypes } from '../types/number';
+
 export function numberAdd2(dispatch) {
-  dispatch({ type: 'number_add2' });
+  dispatch({ type: numberTypes.NUMBER_ADD2 });
 }

@@ -16,4 +16,5 @@ const UseCallbackButtons = (props) => {
   );
 };
 
+// Por exportar como memo ele só vai renderizar quando as props forem alteradas
 export default React.memo(UseCallbackButtons);

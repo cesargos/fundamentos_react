@@ -1,14 +1,16 @@
+import { numberTypes } from '../types/number';
+
 export function numberReducer(state, action) {
   switch (action.type) {
-    case 'number_add2':
+    case numberTypes.NUMBER_ADD2:
       return { ...state, number: state.number + 2 };
-    case 'number_7times':
+    case numberTypes.NUMBER_7TIMES:
       return { ...state, number: state.number * 7 };
-    case 'number_divided25':
+    case numberTypes.NUMBER_DIV25:
       return { ...state, number: state.number / 25 };
-    case 'number_parseInt':
+    case numberTypes.NUMBER_PARSE_INT:
       return { ...state, number: parseInt(state.number) };
-    case 'number_add':
+    case numberTypes.NUMBER_ADD:
       return { ...state, number: state.number + action.payload };
     default:
       return state;
