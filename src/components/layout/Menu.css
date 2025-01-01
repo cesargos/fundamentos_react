@@ -26,33 +26,39 @@
   display: flex;
   flex-direction: column;
 }
-/* Estado inicial ao entrar (DE)*/
-.submenu-enter {
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
+
+@keyframes showHooksMenu {
+  from {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+  }
+  to {
+    max-height: 400px;
+    opacity: 1;
+    overflow: hidden;
+  }
 }
 
-/* Durante a entrada (animação) (PARA) */
-.submenu-enter-active {
-  max-height: 250px;
-  opacity: 1;
-  overflow: hidden;
-  transition: all 500ms ease-in-out;
+@keyframes hiddenHooksMenu {
+  from {
+    max-height: 400px;
+    opacity: 1;
+  }
+  to {
+    max-height: 0;
+    opacity: 0;
+  }
 }
 
-/* Estado inicial ao sair (DE) */
-.submenu-exit {
-  max-height: 250px;
-  opacity: 1;
+.showModuleMenu {
+  animation: showHooksMenu 0.5s ease-in-out 1  forwards ;
 }
 
-/* Durante a saída (animação) (PARA)*/
-.submenu-exit-active {
-  max-height: 0;
-  opacity: 0;
-  transition: all 500ms ease-in-out;
+.hiddenModuleMenu {
+  animation: hiddenHooksMenu 0.5s ease-in-out 1  forwards ;
 }
+
 
 .Menu li.hooks ul {
   display: flex;

@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { CSSTransition } from 'react-transition-group';
 import './Menu.css';
 
 export default () => {
-  const [showHooksMenu, setShowHooksMenu] = useState(false);
+  const [showHooksMenu, setShowHooksMenu] = useState(null);
 
   return (
     <aside className="Menu">
@@ -26,13 +25,10 @@ export default () => {
             <h3 onClick={() => setShowHooksMenu(!showHooksMenu)}>
               Módulo Hooks
             </h3>
-            <CSSTransition
-              in={showHooksMenu}
-              timeout={500} // Tempo da animação em ms
-              classNames="submenu"
-              unmountOnExit // Remove o elemento do DOM quando oculto
-            >
-              <ul className="submenu">
+            {showHooksMenu !== null && (
+              <ul
+                className={`submenu ${showHooksMenu ? 'showModuleMenu' : 'hiddenModuleMenu'}`}
+              >
                 <li>
                   <Link to="/useState">useState()</Link>
                 </li>
@@ -58,7 +54,7 @@ export default () => {
                   <Link to="/useCustom">useMyHook()</Link>
                 </li>
               </ul>
-            </CSSTransition>
+            )}
           </li>
 
           <li>
